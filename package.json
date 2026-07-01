@@ -1,0 +1,27 @@
+{
+  "name": "@midtone/agent-service",
+  "version": "0.0.1",
+  "type": "module",
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "build": "tsc -p tsconfig.build.json && tsc-alias -p tsconfig.build.json -f",
+    "start": "node dist/index.js",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@grpc/grpc-js": "^1.14.3",
+    "@grpc/proto-loader": "^0.8.1",
+    "ai": "^6.0.172",
+    "ai-sdk-ollama": "^3.8.3",
+    "dotenv": "^17.4.2",
+    "drizzle-orm": "^0.45.2",
+    "pg": "^8.20.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.17",
+    "@types/pg": "^8.11.11",
+    "tsc-alias": "^1.8.17",
+    "tsx": "^4.7.1",
+    "typescript": "^5.8.3"
+  }
+}

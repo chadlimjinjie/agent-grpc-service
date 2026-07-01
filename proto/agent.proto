@@ -1,0 +1,16 @@
+syntax = "proto3";
+package agent;
+
+service AgentService {
+  rpc ProcessMessage (ProcessMessageRequest) returns (ProcessMessageResponse);
+}
+
+message ProcessMessageRequest {
+  string message    = 1;
+  string session_id = 2;
+  string source     = 3;
+}
+
+message ProcessMessageResponse {
+  repeated string messages = 1;
+}
