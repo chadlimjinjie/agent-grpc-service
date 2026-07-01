@@ -1,4 +1,4 @@
-# agent-service
+# agent-grpc-service
 
 A minimal **gRPC LLM agent** (port `4104`). It exposes a single RPC that turns an
 incoming chat message into a short burst of persona-styled reply messages.
